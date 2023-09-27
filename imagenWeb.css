@@ -1,0 +1,42 @@
+body {
+  background-color: thistle;
+  margin: auto;
+  width: 90%;
+}
+header {
+  text-align: center;
+}
+.contedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item {
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.imagen {
+  width: 100%;
+  height: auto;
+}
+p {
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: auto;
+    width: 100%;
+  }
+  .imagen {
+    max-width: 100%; /* Asegura que la imagen sea responsive en pantallas pequeñas */
+  }
+  .item {
+    text-align: center;
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla en dispositivos pequeños */
+  }
+  p {
+    font-size: 15px;
+  }
+}
